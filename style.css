@@ -1,0 +1,58 @@
+body{
+    font-family: "Nunito", serif;
+}
+header{
+    background: #fefed8;
+}
+.nav{
+    /* height: 80px; 
+    display: flex !important;*/
+}
+.border-color {
+    border-color: #eaeac6;
+}
+.cart a:last-child li {
+    display:none;
+}
+
+@media screen and (max-width: 980px){
+    .mainnavbar .nav{
+        display:none;
+    }
+    .cart a:last-child li{
+        display:block;
+    }
+    .mainnavbar .nav {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        width: 250px;
+        height: 100vh;
+        background: #ccc;
+    }
+    
+    .nav .flex {
+        flex-direction: column;
+        justify-content: flex-start !important;!i;!;
+        text-align: left;
+        width: 100%;
+        align-items: baseline;
+    }
+    
+    .nav .flex a {
+        width: 90%;
+        display: inline-block;
+        border-radius: 0px;
+        border-bottom: 1px solid #eee;
+    }
+    .closedsidebar{
+        display:block !important;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    
+}
+
+

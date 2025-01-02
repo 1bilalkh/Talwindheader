@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <!-- <header>
+        <div class="flex justify-start border-b border-color">
+            <div class="flex shrink-0 items-center border-r border-color p-4 text-center">
+                <h2 class="text-3xl text-center tracking-tight sm:text-4.5xl  sm:leading-extra-tight block w-20">
+                    Logo
+                  </h2>
+              </div>
+            <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                <div class="hidden sm:ml-6 sm:block flex nav">
+                  <div class="flex space-x-4 items-center ">
+                    <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Home</a>
+                    <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Shop</a>
+                    <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Pages</a>
+                    <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Blog</a>
+                    <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Contact</a>
+                  </div>
+                </div>
+            </div>
+            <div class="flex flex-1 items-center justify-end items-center">
+                <ul class='flex'>
+                    <li class="border-r border-color py-7 px-8"><i class='bx bx-search-alt-2 text-2xl'></i></li>
+                    <li class="border-r border-color py-7 px-8"><i class='bx bx-heart text-2xl'></i></li>
+                    <li class="border-r border-color py-7 px-8"><i class='bx bx-shopping-bag text-2xl' ></i></li>
+                    <li class=" py-7 px-8"><i class='bx bx-align-right text-2xl'></i></li>
+                </ul>
+            </div>
+    </div>
+  </header> -->
+  
+  
+    <div class="flex justify-start border-b border-color">
+        <div class="flex shrink-0 items-center border-r border-color p-4 text-center">
+            <h2 class="text-3xl text-center tracking-tight sm:text-4.5xl  sm:leading-extra-tight block w-20">
+                Logo
+              </h2>
+          </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start mainnavbar">
+            <div class="hidden sm:ml-6 sm:block flex nav pt-6" id="content">
+              <a class="lg:hidden block md:hidden closedsidebar" id="sidebarclosed" href="#">x</a>
+              <div class="flex space-x-4 items-center ">
+                <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Home</a>
+                <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Shop</a>
+                <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Pages</a>
+                <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Blog</a>
+                <a href="#" class="hover:bg-gray-700 hover:text-white rounded-md px-5 py-2 text-1xl">Contact</a>
+              </div>
+            </div>
+        </div>
+        <div class="flex flex-1 items-center justify-end items-center">
+            <ul class='flex pt-1 cart'>
+                <a href="javascript:void(0)"><li class="border-r border-color lg:py-7 lg:px-8 py-7 px-3"><i class='bx bx-search-alt-2 text-2xl'></i></li></a>
+                <a href="javascript:void(0)"><li class="border-r border-color lg:py-7 lg:px-8 py-7 px-3"><i class='bx bx-heart text-2xl'></i></li></a>
+                <a href="javascript:void(0)"><li class="border-r border-color lg:py-7 lg:px-8 py-7 px-3"><i class='bx bx-shopping-bag text-2xl' ></i></li></a>
+                <a href="javascript:void(0)" id="toggleButton"><li class="lg:py-7 lg:px-8 py-7 px-3"><i class='bx bx-align-right text-2xl'></i></li></a>
+            </ul>
+        </div>
+</div>
+
+<script>
+  // Get the button and content elements
+  const toggleButton = document.getElementById('toggleButton');
+    const content = document.getElementById('content');
+    const sidebarclosed = document.getElementById("sidebarclosed");
+
+    // Add click event listener to the toggle button
+    toggleButton.addEventListener('click', function() {
+      // Toggle the display of the content
+      if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'block'; // Show the content
+      } else {
+        content.style.display = 'none'; // Hide the content
+      }
+    });
+    sidebarclosed.addEventListener('click', function() {
+        content.style.display = 'none';
+    })
+</script>
+
+
+
+</body>
+</html>
